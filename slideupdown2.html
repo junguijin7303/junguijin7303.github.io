@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+.big{
+  display: none;
+  width: 350px;
+  height: 350px;
+}
+input{
+  width: 150px;
+  height: 30px;
+  border: 1px solid #ccc;
+  margin: 10px 15px;
+}
+img{
+  width:150px;
+  height: 150px;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $("#big1").slideToggle(1000);
+      });
+      $("#btn2").click(function(){
+        $("#big2").slideToggle(1000);
+      });
+    });
+
+    </script>
+  </head>
+  <body>
+<table border=1 cellspacing=0>
+  <tr>
+    <td><img src="img/sana.jpg"></td>
+    <td><img src="img/momo.jpg"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="큰 이미지보기/닫기" id="btn1"></td>
+    <td><input type="button" value="큰 이미지보기/닫기" id="btn2"></td>
+  </tr>
+  <tr>
+    <td><img src="img/sana.jpg" id="big1" class="big"></td>
+    <td><img src="img/momo.jpg" id="big2" class="big"></td>
+  </tr>
+</table>
+
+  </body>
+</html>
